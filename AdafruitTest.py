@@ -14,10 +14,20 @@ binhoTester.setPullUpStateI2C(0, "DIS")
 binhoTester.setClockI2C(0, 400000)
 
 # initialize the display
+
 print(binhoTester.startI2C(0, 0xE0))
 print(binhoTester.writeByteI2C(0, 0x21))
+print(binhoTester.endI2C(0))
+
+print(binhoTester.startI2C(0, 0xE0))
 print(binhoTester.writeByteI2C(0, 0x81))
+print(binhoTester.endI2C(0))
+
+print(binhoTester.startI2C(0, 0xE0))
 print(binhoTester.writeByteI2C(0, 0xA0))
+print(binhoTester.endI2C(0))
+
+print(binhoTester.startI2C(0, 0xE0))
 print(binhoTester.writeByteI2C(0, 0xEF))
 print(binhoTester.endI2C(0))
 
