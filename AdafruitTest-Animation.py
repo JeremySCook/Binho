@@ -37,6 +37,10 @@ binhoTester.startI2C(0, 0xE0)
 binhoTester.writeByteI2C(0, 0xA0) # brightness
 binhoTester.endI2C(0)
 
+binhoTester.startI2C(0, 0xE0)
+binhoTester.writeByteI2C(0, 0xEF)
+binhoTester.endI2C(0)
+
 #write/scroll letters
 
 for j in range(0, 16, 2):
